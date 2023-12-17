@@ -31,8 +31,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest 
+        pytest testpytest.py
     - name: Test with Lint
       run: |
-        pylint 
+        pylint testpytest.py
     
