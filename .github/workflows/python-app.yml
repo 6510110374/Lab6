@@ -28,11 +28,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         pip install pylint
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest testpytest.py
+        pytest test.py
     - name: Test with Lint
       run: |
-        pylint testpytest.py
+        pylint test.py
     
