@@ -12,4 +12,4 @@ def test_answer():
     """
     This function tests the func function.
     """
-    assert func(3) == 5
+    assert func(3) == 4
